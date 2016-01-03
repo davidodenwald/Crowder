@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Crowder</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Benutzername</string>
+    <string name="prompt_password">Passwort</string>
+    <string name="action_register">Registrien</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="error_invalid_username">Der Username ist falsch</string>
+    <string name="error_invalid_password">Das Passwort ist zu kurz</string>
+    <string name="error_incorrect_password">Das Passwort ist falsch</string>
+    <string name="error_field_required">Dieses Feld muss ausgefüllt werden</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- Strings related to main -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="add_project">Projekt hinzufügen</string>
+
+    <!-- Strings related to projects -->
+    <string name="project_budget">Budget:</string>
+    <string name="project_currency">€</string>
+    <string name="project_date">Ablaufdatum:</string>
+
+    <!-- Strings related to new projects -->
+    <string name="prompt_project_name">Name</string>
+    <string name="prompt_project_description">Beschreibung</string>
+    <string name="prompt_project_budget">Budget</string>
+    <string name="prompt_project_date">Enddatum</string>
+    <string name="new_project_create">Erstellen</string>
+
+    <!-- Strings related to new projects errors -->
+    <string name="error_project_name_to_short">Projektname zu kurz (5 Zeichen min.)</string>
+    <string name="error_project_name_to_long">Projektname zu lang (20 Zeichen max.)</string>
+    <string name="error_project_description_to_short">Projektbeschreibung zu kurz (10 Zeichen min.)</string>
+    <string name="error_budget_to_low">Budget muss min. 10 € betragen</string>
+    <string name="error_date_empty">Datum muss gesetzt werden</string>
+
+    <!-- Strings related to donate -->
+    <string name="donate_money_left">werden noch gebraucht</string>
+    <string name="error_donate_to_little_money">Zu wenig (min 1€)</string>
+
+
+    <!-- Strings related to register -->
+    <string name="register_username">Username</string>
+    <string name="register_password">Passwort</string>
+    <string name="register_password_again">Wiederholen</string>
+    <string name="register_city">Stadt</string>
+    <string name="register_nation">Land</string>
+    <string name="register_submit">Registrieren</string>
+
+    <!-- Strings related to register errors -->
+    <string name="error_register_password_not_similar">Passwörter stimmen nicht überein</string>
+
+    <!-- String related to profile -->
+    <string name="profile_projects">Projekte</string>
+    
+</resources>

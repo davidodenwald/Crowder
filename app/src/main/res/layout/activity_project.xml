@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ka.fh.crowder.ProjectActivity"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/project_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/project_title"
+        android:layout_marginBottom="5dp"
+        android:textColor="#0022ff" />
+
+    <TextView
+        android:id="@+id/project_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/project_username"
+        android:text="Project Title"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/project_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/project_title"
+        android:text="Project Descripion"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/budget_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/project_description"
+        android:layout_marginTop="20dp"
+        android:text="@string/project_budget"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/date_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/budget_title"
+        android:layout_marginTop="40dp"
+        android:text="@string/project_date"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/project_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/date_title"
+        android:layout_alignEnd="@+id/project_description"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="10€" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="5 €"
+        android:id="@+id/project_donated"
+        android:layout_alignTop="@+id/seperator"
+        android:layout_toStartOf="@+id/seperator" />
+
+    <TextView
+        android:id="@+id/project_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/project_description"
+        android:layout_alignTop="@+id/date_title"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/donate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/project_date"
+        android:layout_below="@+id/project_date"
+        android:layout_marginTop="20dp"
+        android:text="@string/project_currency" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/budget_title"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <ProgressBar
+            android:id="@+id/project_budget_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:indeterminate="false"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:id="@+id/project_budget_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=" / "
+        android:id="@+id/seperator"
+        android:layout_alignTop="@+id/project_budget"
+        android:layout_toStartOf="@+id/project_budget" />
+
+</RelativeLayout>
